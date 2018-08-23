@@ -1,0 +1,37 @@
+site1:
+        site:https://SHUKHON.MOF.GOV.IL
+        title:מערכת אותות 4.6.0.4
+        redirectedUrl:https://otot.cma.gov.il/Error/Error401?aspxerrorpath=/
+        timeToReport:10
+        comments:כרטיס חכם
+site2:
+        site:https://www.gov.il/he/Departments/prime_ministers_office
+        title:משרד ראש הממשלה
+        redirectedUrl:https://www.gov.il/he/Departments/prime_ministers_office
+        timeToReport:10
+        comments:0
+site3:
+        site:http://www.pmo.gov.il/Pages/default.aspx
+        title:משרד ראש הממשלה
+        redirectedUrl:https://www.gov.il/he/Departments/prime_ministers_office
+        timeToReport:10
+        comments:0
+site4:
+        site:https://www.gov.il/he/Departments/ministry_of_public_security
+        title:המשרד לביטחון הפנים
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_of_public_security
+        timeToReport:10
+        comments:0
+site5:
+        site:https://www.gov.il/he/Departments/ministry_for_social_equality
+        title:המשרד לשוויון חברתי
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_for_social_equality
+        timeToReport:10
+        comments:0
+site6:
+        site:https://rishuybniya.moin.gov.il/PersonalZone/Pages/Lobby.aspx
+        title:המשרד לשוויון חברתידף חידוש משך זמן ההתחברות
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_for_social_equality
+        timeToReport:30
+        comments:0
+
