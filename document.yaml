@@ -28,10 +28,82 @@ site5:
         redirectedUrl:https://www.gov.il/he/Departments/ministry_for_social_equality
         timeToReport:10
         comments:0
+
 site6:
         site:https://rishuybniya.moin.gov.il/PersonalZone/Pages/Lobby.aspx
         title:המשרד לשוויון חברתידף חידוש משך זמן ההתחברות
         redirectedUrl:https://www.gov.il/he/Departments/ministry_for_social_equality
         timeToReport:30
         comments:0
-
+site7:
+        site:https://www.gov.il/he/Departments/digital_israel
+        title:מטה המיזם הלאומי ישראל דיגיטלית, במשרד לשוויון חברתי 
+        redirectedUrl:https://www.gov.il/he/Departments/digital_israel
+        timeToReport:10
+        comments:0
+site8:
+        site:https://www.gov.il/he/Departments/ministry_of_religious_services
+        title:המשרד לשירותי דת
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_of_religious_services
+        timeToReport:10
+        comments:0
+site9:
+        site:https://www.gov.il/he/Departments/ministry_of_energy
+        title:משרד האנרגיה 
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_of_energy
+        timeToReport:10
+        comments:0
+site10:
+        site:https://www.gov.il/he/Departments/ministry_of_construction_and_housing
+        title:משרד הבינוי והשיכון 
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_of_construction_and_housing
+        timeToReport:10
+        comments:0
+site11:
+        site:https://www.gov.il/he/Departments/ministry_of_economy
+        title:משרד הכלכלה והתעשייה
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_of_economy
+        timeToReport:10
+        comments:0
+site12:
+        site:https://rishuybniya.moin.gov.il/PersonalZone/Pages/Lobby.aspx
+        title:משרד המדע והטכנולוגיה
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_of_science_and_technology
+        timeToReport:10
+        comments:0
+site13:
+        site:https://www.gov.il/he/Departments/ministry_of_justice
+        title:משרד המשפטים
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_of_justice
+        timeToReport:10
+        comments:0
+site14:
+        site:http://ecom.gov.il/counter/general/Homepage.aspx?counter=17&catalog=0&language=he
+        title:שירות התשלומים הממשלתי - משרד המשפטים
+        redirectedUrl:https://ecom.gov.il/counter/general/Homepage.aspx?counter=17&catalog=0&language=he
+        timeToReport:10
+        comments:0
+site15:
+        site:https://fileretrieval.justice.gov.il
+        title:הורדת מסמך/תיק
+        redirectedUrl:https://fileretrieval.justice.gov.il/
+        timeToReport:10
+        comments:0
+site16:
+        site:https://rishuybniya.moin.gov.il/PersonalZone/Pages/Lobby.aspx
+        title:המשרד לשוויון חברתידף חידוש משך זמן ההתחברות
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_for_social_equality
+        timeToReport:10
+        comments:0
+site17:
+        site:https://www.gov.il/he/Departments/ministry_of_aliyah_and_integration
+        title:משרד העלייה והקליטה
+        redirectedUrl:https://www.gov.il/he/Departments/ministry_of_aliyah_and_integration
+        timeToReport:10
+        comments:0
+site18:
+        site:http://moia.gov.il/Moia_he
+        title:דף הבית - משרד העלייה והקליטה
+        redirectedUrl:http://www.moia.gov.il/Hebrew/Pages/default.aspx
+        timeToReport:10
+        comments:0

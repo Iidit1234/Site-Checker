@@ -1,53 +1,49 @@
-#try:
-from redis import Redis, RedisError  
-#import logging
+from redis import Redis, RedisError
 import yaml
-#except ImportError as err:
-    #print(err.message)
-#log = logging.getLogger(__name__)
+import logging
 
+logging.basicConfig(filename="testRedis.log",format='%(asctime)s %(levelname)s:%(message)s', datefmt='%m/%d/%Y %I:%M:%S %p' )
 
 
 redis_host = "localhost"
 redis_port = 6379
 redis_password = ""
-#log = logging.getLogger(__name__)
+
 
 class initRedis(object):
+
+
     def __init__(self):
 
         self.__count = 0
         self.__index = 1
 
-        #try:
+        try:
             self.datamap = yaml.load(open('document.yaml')) #load data from document file
-
-        #except IOError as err:
-			
-            #log.error("There is an issue with yaml doc loading",err.message)
+        except IOError as err:
+            logging.error("There is an issue with yaml doc loading",err.message )
         #init redis
-        #try:
-            self.__r = Redis(host="redis", db=0, socket_connect_timeout=2, socket_timeout=2)
-        #except Exception as err:
-		
-            #log.error(err.message)
+        try:
+            self.__r = Redis(host=redis_host, port=redis_port, db=0)
+        except Exception as err:
+            logging.error(err.message)
 
+        logging.info("------------------- Start the test ----------------------")
 
         self.__list = self.__r.keys()
-        self.__start()
 
-    def __start(self):
         self.__delete()
-
         self.__initDb()
-    #Read all back to python
         b = self.__r.lrange("sites", "0", "-1")
-        print("print the list value",b)
+        logging.info("------------------- print the list value ----------------------", b)
+        print("print the list value", b)
         self.__rpop()
+
+
 
     def __initDb(self):
         # Init redis with data from document yaml file
-        #log.info("init db with data from document file")
+        #logging.info("init db with data from document file")
         index = 1
         try:
             while (index < self.__countSites() + 1):
@@ -58,11 +54,12 @@ class initRedis(object):
             pass
     def __delete(self):
     #delete old values from db
-        #log.info("Clean the db from previous values")
+        logging.info("Clean the db from previous values")
         list=self.__list
         if (list):
             for site in list:
-                print("thesite is", site)
+                logging.info("the site is", site)
+
                 self.__r.delete(site)
     #Todo: update db with new data
     def __countSites(self):
@@ -78,11 +75,12 @@ class initRedis(object):
         count=0
         while (count < self.__countSites()):
             site = self.__r.rpoplpush("sites", "sites")
-            print("----------------------", count, site)
-            #print(count, site.decode('UTF-8'))
+            logging.info("-----------", count, site.decode('UTF-8'))
+            print("----------------------", count, site.decode('UTF-8'))
+
             count = count + 1
         content = self.__r.rpop("sites")
-        print("the content is", content)
+        #logging.info("the content is", content)
 
 if __name__ == '__main__':
     init=initRedis()
